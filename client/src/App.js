@@ -14,7 +14,7 @@ function App() {
 
       </header>
       <main>
-        <Calendar onChange={onChange} value={value} locale={locales} />
+        <Calendar locale={locales} />
       </main>
     </div>
   );
