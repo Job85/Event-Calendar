@@ -7,17 +7,15 @@ function App() {
   // function onChange(nextValue) {
   //   setValue(nextValue);
   // }
-  const [today, activeStartDate] = useState(new Date(2022, 0, 1));
-  function onChange(nextDay) {
-    activeStartDate(nextDay)
-  }
+  const [value, onChange] = useState(new Date(2022, 0, 1));
+
   return (
     <div className="App">
       <header className="App-header">
 
       </header>
       <main>
-        <Calendar onChange={onChange} today={today} />
+        <Calendar onChange={onChange} value={value} />
       </main>
     </div>
   );
