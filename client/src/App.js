@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import Calendar from 'react-calendar';
+import Calendar from 'react-big-calendar';
 
 import DatePicker from 'react-datepicker';
 
@@ -14,7 +14,7 @@ function App() {
 
       </header>
       <main>
-        <Calendar locale={locales} />
+        <Calendar onChange={onChange} value={value} locale={locales} />
       </main>
     </div>
   );
