@@ -1,8 +1,6 @@
 import './App.css';
-import React, { useState } from 'react';
-import Calendar from 'react-big-calendar';
-
-import DatePicker from 'react-datepicker';
+import React from 'react';
+import CalendarComp from './components/CalendarComp'
 
 function App() {
   const locales = {
@@ -14,7 +12,10 @@ function App() {
 
       </header>
       <main>
-        <Calendar onChange={onChange} value={value} locale={locales} />
+        <div>
+          <h3>Choose a Date for Your Event</h3>
+          <CalendarComp />
+        </div>
       </main>
     </div>
   );
