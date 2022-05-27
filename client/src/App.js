@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import CalendarComp from './components/CalendarComp'
 import DateRangeComp from './components/DateRangeComp';
+import DateRangePickerComp from './components/DateRangePickerComp'
 
 function App() {
   const locales = {
@@ -20,6 +21,10 @@ function App() {
         <div>
           <h3>Choose a Date Range for Event</h3>
           <DateRangeComp />
+        </div>
+        <div>
+          <h3>Date Range Picker</h3>
+          <DateRangePickerComp />
         </div>
       </main>
     </div>
